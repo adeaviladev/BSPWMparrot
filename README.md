@@ -1,6 +1,6 @@
 # Script Parrot
 
-###Uso del Script
+### Uso del Script
 
 git clone https://github.com/xJackSx/BSPWMparrot.git
 
