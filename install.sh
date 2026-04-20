@@ -26,7 +26,7 @@ sudo apt install -y meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfix
 
 # Instalamos paquetes adionales
 
-sudo apt install -y feh flameshot scrub zsh rofi xclip bat locate neofetch wmname acpi bspwm sxhkd imagemagick ranger kitty 
+sudo apt install -y feh flameshot scrub zsh rofi xclip bat locate wmname acpi bspwm sxhkd imagemagick ranger
 
 # Creando carpeta de Reposistorios
 
@@ -64,10 +64,11 @@ echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.powerlevel10k
 
-# Configuramos el tema Nord de Rofi:
+# Temas de Rofi:
 
 mkdir -p ~/.config/rofi/themes
-cp $ruta/rofi/nord.rasi ~/.config/rofi/themes/
+cp $ruta/rofi/* ~/.config/rofi/themes/
+cp $ruta/rofi/template ~/.config/rofi/themes/.
 
 # Instando lsd
 
@@ -107,7 +108,6 @@ sudo cp -v $ruta/.p10k.zsh-root /root/.p10k.zsh
 # Script
 
 sudo cp -v $ruta/scripts/whichSystem.py /usr/local/bin/
-sudo cp -v $ruta/scripts/screenshot /usr/local/bin/
 
 # Plugins ZSH
 
